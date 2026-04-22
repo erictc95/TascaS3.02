@@ -1,5 +1,6 @@
+package level1.exercise1;
+
 import java.util.Stack;
-import java.util.stream.Collectors;
 
 public class Undo {
     private static Undo instance;
