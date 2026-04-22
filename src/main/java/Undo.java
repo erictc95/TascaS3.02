@@ -50,4 +50,8 @@ public class Undo {
             System.out.println("No commands in history");
         }
     }
+
+    public void clearHistory() {
+        orders.clear();
+    }
 }
