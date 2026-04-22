@@ -5,7 +5,7 @@ public class Undo {
     private static Undo instance;
     private Stack<String> orders;
 
-    private Undo() {
+    Undo() {
         orders = new Stack<>();
     }
 
@@ -27,11 +27,13 @@ public class Undo {
     public void addCommand(String command) {
         if (command != null && !command.isEmpty()) {
             orders.push(command);
+            System.out.println("Command executed!");
         }
     }
 
     public String undoCommand() {
         if (!orders.isEmpty()) {
+            System.out.println("Command Undo!");
             return orders.pop();
         }
         throw new IllegalStateException("No commands to Undo");
