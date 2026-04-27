@@ -45,7 +45,7 @@ public class ReportTest {
     @Test
     void shouldGenerateCsvReport() {
         ReportService reportService = new ReportService(new CsvReportStrategy());
-        String  csvResult = reportService.generateReport(reportData);
+        String csvResult = reportService.generateReport(reportData);
         assertEquals(expectedCsvReport, csvResult);
     }
 
