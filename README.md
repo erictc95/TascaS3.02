@@ -187,4 +187,4 @@ Extensible architecture
 Unit testing coverage
 👨‍💻 Author
 
-Project developed by Eric Tarrés Cabrisas.
+## Project developed by Eric Tarrés Cabrisas.
