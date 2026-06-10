@@ -10,14 +10,6 @@ The project includes implementations of the following patterns:
 * Abstract Factory
 * Strategy
 
-The main objective is to build a software architecture that is:
-
-* Scalable
-* Reusable
-* Low coupled
-* Easy to maintain
-* Easy to extend
-
 All functionalities are validated through **JUnit 5 unit tests**.
 
 ---
@@ -51,7 +43,7 @@ Implementation of an `Undo` class using the **Singleton Design Pattern**.
 
 This pattern guarantees that only one shared instance of the class exists during the entire application lifecycle.
 
-The class simulates the basic behavior of an **Undo system**, similar to a Linux terminal command history.
+The class simulates the behavior of an **Undo system**, similar to a Linux terminal command history.
 
 ---
 
@@ -84,16 +76,9 @@ undo.addCommand("cd folder");
 
 undo.showHistory();
 
-// Output:
-// mkdir folder
-// cd folder
-
 undo.undoCommand();
 
 undo.showHistory();
-
-// Output:
-// mkdir folder
 ```
 
 ---
@@ -180,8 +165,6 @@ ContactFactory spainFactory = new SpainContactFactory(
 );
 
 Contact contactSpain = new Contact(spainFactory);
-
-System.out.println(contactSpain);
 ```
 
 ### USA
@@ -195,8 +178,6 @@ ContactFactory usaFactory = new USAContactFactory(
 );
 
 Contact contactUSA = new Contact(usaFactory);
-
-System.out.println(contactUSA);
 ```
 
 ---
@@ -212,8 +193,6 @@ This pattern allows changing the report generation algorithm at runtime without 
 ---
 
 ## ✅ Supported Report Formats
-
-The system can generate reports in:
 
 * HTML
 * JSON
@@ -275,36 +254,6 @@ mvn test
 
 ---
 
-# ▶️ Running the Project
-
-## Compile
-
-```bash
-mvn clean install
-```
-
-## Run
-
-(Only if the project includes Spring Boot)
-
-```bash
-mvn spring-boot:run
-```
-
----
-
-# 🎯 Learning Objectives Achieved
-
-* Application of SOLID principles
-* Correct implementation of creational and behavioral patterns
-* Separation of responsibilities
-* Low coupling
-* Extensible architecture
-* Unit testing coverage
-
----
-
 # 👨‍💻 Author
 
 **Eric Tarrés Cabrisas**
-
