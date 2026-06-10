@@ -22,6 +22,7 @@ All functionalities are validated through unit testing.
 Java 21
 Maven
 JUnit 5
+
 📁 Project Structure
 TascaS3.02
 │
@@ -29,6 +30,7 @@ TascaS3.02
 ├── level2-abstract-factory
 ├── level3-strategy
 └── src/test
+
 🔹 Level 1 — Singleton Pattern
 📌 Description
 
@@ -45,6 +47,7 @@ The Undo class allows:
 Adding commands
 Undoing the last command
 Displaying the command history
+
 🧱 Implemented Requirements
 Private constructor
 Static getInstance() method
@@ -68,6 +71,7 @@ undo.showHistory();
 
 // Output:
 // mkdir folder
+
 🔹 Level 2 — Abstract Factory Pattern
 📌 Description
 
@@ -91,6 +95,7 @@ SpainContactFactory
 USAContactFactory
 Client
 Contact
+
 🌍 Supported Formats
 Spain
 Carrer Major 34, 08001 Barcelona
@@ -122,6 +127,7 @@ ContactFactory usaFactory = new USAContactFactory(
 Contact contactUSA = new Contact(usaFactory);
 
 System.out.println(contactUSA);
+
 🔹 Level 3 — Strategy Pattern
 📌 Description
 
@@ -140,6 +146,7 @@ PDF
 CSV
 Excel
 Word
+
 🧱 Architecture
 Strategy Interface
 ReportStrategy
@@ -153,6 +160,7 @@ ExcelReportStrategy
 WordReportStrategy
 Context / Service
 ReportService
+
 💻 Usage Example
 ReportStrategy strategy = new JsonReportStrategy();
 
@@ -174,7 +182,6 @@ mvn test
 Compile
 mvn clean install
 Run
-mvn spring-boot:run
 
 (Only if the project includes Spring Boot)
 
@@ -185,6 +192,7 @@ Separation of responsibilities
 Low coupling
 Extensible architecture
 Unit testing coverage
+
 👨‍💻 Author
 
 ## Project developed by Eric Tarrés Cabrisas.
